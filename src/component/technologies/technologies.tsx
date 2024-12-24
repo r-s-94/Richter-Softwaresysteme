@@ -1,4 +1,4 @@
-import { HashLink } from "react-router-hash-link";
+//import { HashLink } from "react-router-hash-link";
 import HTML_LOGO from "../../assets/html-Logo.png";
 import CSS_LOGO from "../../assets/css-Logo.png";
 import SCSS_LOGO from "../../assets/scss-Logo sass-Logo.png";
@@ -15,26 +15,6 @@ export default function Technologies() {
   return (
     <div className="technology-div">
       <h3 className="technology-div__headline">Technologien</h3>
-      <HashLink to="/#technologies" className=" link">
-        {" "}
-        <button className="technology-div__back-button button">
-          zurück{" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            className="technology-div__icon"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 19.5 8.25 12l7.5-7.5"
-            />
-          </svg>
-        </button>{" "}
-      </HashLink>
 
       <div className="technology-div__technology-overview-div">
         <div className="technology-div__markup-language-div">
@@ -129,4 +109,27 @@ export default function Technologies() {
       </div>
     </div>
   );
+
+  /* <HashLink to="/#technologies" className=" link">
+        {" "}
+        <button className="technology-div__back-button button">
+          zurück{" "}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="technology-div__icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>{" "}
+      </HashLink>
+  
+  */
 }
