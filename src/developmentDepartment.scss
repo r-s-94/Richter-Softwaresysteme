@@ -1,0 +1,536 @@
+@mixin column-flex-direction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin content-direction-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin content-direction-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin full-width {
+  width: 100%;
+}
+
+@mixin gray-border-for-section {
+  border: 0.5rem solid #e0e0e0;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+}
+
+@mixin project-button-properties {
+  border: 1px solid #222222;
+  background-color: #f3f5f6;
+  /*color: #81d4fa;*/
+  color: #006db5;
+  border-radius: 0.3rem;
+}
+
+@mixin project-button-hover-properties {
+  background-color: #006db5;
+  border-color: white;
+  color: white;
+}
+
+@mixin box-adjustment() {
+  box-sizing: border-box;
+}
+
+.development-department-section {
+  @include content-direction-column-center();
+  @include gray-border-for-section();
+  padding: 1rem 0;
+  row-gap: 1rem;
+  margin: 1rem 3rem;
+
+  &__headline {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__development-department-overview-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 97%;
+    gap: 1.5rem;
+    margin: 1rem;
+  }
+
+  &__web-development-div,
+  &__app-development-div,
+  &__gaming-development-div {
+    @include gray-border-for-section();
+    @include column-flex-direction();
+    padding: 1rem 0;
+    row-gap: 1rem;
+  }
+
+  &__web-development-headline,
+  &__app-development-headline,
+  &__gaming-development-headline {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__web-development-img,
+  &__app-development-img,
+  &__gaming-development-img {
+    height: 20rem;
+  }
+
+  &__app-development-text,
+  &__gaming-development-text {
+    font-size: 1.3rem;
+  }
+
+  &__web-development-link,
+  &__app-development-link,
+  &__gaming-development-link {
+  }
+
+  &__web-development-button {
+    @include project-button-properties();
+    width: 16rem;
+    height: 2.3rem;
+    font-size: 1.1rem;
+  }
+
+  &__app-development-button {
+    @include project-button-properties();
+    width: 15.5rem;
+    height: 2.3rem;
+    font-size: 1.1rem;
+  }
+
+  &__gaming-development-button {
+    @include project-button-properties();
+    width: 17rem;
+    height: 2.3rem;
+    font-size: 1.1rem;
+  }
+
+  &__web-development-button:hover,
+  &__app-development-button:hover,
+  &__gaming-development-button:hover {
+    @include project-button-hover-properties();
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .development-department-section {
+    @include content-direction-column-center();
+    border-width: 0.5rem;
+    padding: 1rem 0 1.5rem 0;
+    row-gap: 1rem;
+    margin: 1rem 3%;
+
+    &__headline {
+      margin-top: 2.5rem;
+      font-size: 2rem;
+    }
+
+    &__development-department-overview-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 2.3rem;
+      gap: 1.5rem;
+    }
+
+    &__web-development-div,
+    &__app-development-div,
+    &__gaming-development-div {
+      border-width: 0.5rem;
+      width: 100%;
+      padding: 2rem 0;
+      row-gap: 2rem;
+    }
+
+    &__web-development-headline,
+    &__app-development-headline,
+    &__gaming-development-headline {
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+
+    &__web-development-img,
+    &__app-development-img,
+    &__gaming-development-img {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+    }
+
+    &__app-development-text,
+    &__gaming-development-text {
+      font-size: 1.3rem;
+    }
+
+    &__web-development-button {
+      width: 18rem;
+      height: 2.2rem;
+      font-size: 1.3rem;
+    }
+
+    &__app-development-button {
+      width: 16.6rem;
+      height: 2.2rem;
+      font-size: 1.3rem;
+    }
+
+    &__gaming-development-button {
+      width: 19rem;
+      height: 2.2rem;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .development-department-section {
+    @include content-direction-column-center();
+    border-width: 0.5rem;
+    padding: 1rem 0 1.5rem 0;
+    row-gap: 1rem;
+    margin: 1rem 3%;
+
+    &__headline {
+      margin-top: 2.3rem;
+      font-size: 1.7rem;
+    }
+
+    &__development-department-overview-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 2rem;
+      gap: 1.5rem;
+    }
+
+    &__web-development-div,
+    &__app-development-div,
+    &__gaming-development-div {
+      border-width: 0.5rem;
+      width: 100%;
+      padding: 2rem 0;
+      row-gap: 2rem;
+    }
+
+    &__web-development-headline,
+    &__app-development-headline,
+    &__gaming-development-headline {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    &__web-development-img,
+    &__app-development-img,
+    &__gaming-development-img {
+      width: 100%;
+      max-width: 37rem;
+      height: auto;
+    }
+
+    &__app-development-text,
+    &__gaming-development-text {
+      font-size: 1.3rem;
+    }
+
+    &__web-development-button {
+      width: 17.3rem;
+      height: 2.2rem;
+      font-size: 1.2rem;
+    }
+
+    &__app-development-button {
+      width: 16.6rem;
+      height: 2.2rem;
+      font-size: 1.2rem;
+    }
+
+    &__gaming-development-button {
+      width: 19rem;
+      height: 2.2rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .development-department-section {
+    @include content-direction-column-center();
+    border-width: 0.4rem;
+    padding: 1rem 0;
+    row-gap: 1rem;
+    margin: 1rem 3%;
+
+    &__headline {
+      margin-top: 2rem;
+      font-size: 1.7rem;
+    }
+
+    &__development-department-overview-div {
+      @include column-flex-direction();
+      @include full-width();
+      margin-top: 1.7rem;
+      row-gap: 1.5rem;
+    }
+
+    &__web-development-div,
+    &__app-development-div,
+    &__gaming-development-div {
+      border-width: 0.4rem;
+      width: 95%;
+      padding: 2rem 0;
+      row-gap: 2rem;
+    }
+
+    &__web-development-headline,
+    &__app-development-headline,
+    &__gaming-development-headline {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    &__web-development-img,
+    &__app-development-img,
+    &__gaming-development-img {
+      width: 100%;
+      max-width: 50rem;
+      height: auto;
+    }
+
+    &__app-development-text,
+    &__gaming-development-text {
+      font-size: 1.3rem;
+    }
+
+    &__web-development-button {
+      width: 16rem;
+      height: 2.1rem;
+      font-size: 1.1rem;
+    }
+
+    &__app-development-button {
+      width: 15.5rem;
+      height: 2.1rem;
+      font-size: 1.1rem;
+    }
+
+    &__gaming-development-button {
+      width: 17.5rem;
+      height: 2.1rem;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .development-department-section {
+    @include content-direction-column-center();
+    border-width: 0.4rem;
+    padding: 1rem 0 0.5rem 0;
+    row-gap: 1rem;
+    margin: 1rem 3%;
+
+    &__headline {
+      margin-top: 1.3rem;
+      font-size: 1.6rem;
+    }
+
+    &__development-department-overview-div {
+      @include column-flex-direction();
+      @include full-width();
+      margin-top: 1rem;
+      row-gap: 1.4rem;
+    }
+
+    &__web-development-div,
+    &__app-development-div,
+    &__gaming-development-div {
+      border-width: 0.4rem;
+      width: 95%;
+      padding: 1.5rem 0;
+      row-gap: 1.5rem;
+    }
+
+    &__web-development-headline,
+    &__app-development-headline,
+    &__gaming-development-headline {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    &__web-development-img,
+    &__app-development-img,
+    &__gaming-development-img {
+      width: 100%;
+      height: auto;
+    }
+
+    &__app-development-text,
+    &__gaming-development-text {
+      font-size: 1.2rem;
+    }
+
+    &__web-development-button {
+      width: 14rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+
+    &__app-development-button {
+      width: 14rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+
+    &__gaming-development-button {
+      width: 16rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .development-department-section {
+    @include content-direction-column-center();
+    border-width: 0.3rem;
+    padding: 1rem 0 0 0;
+    row-gap: 1rem;
+    margin: 1rem 3%;
+
+    &__headline {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+    }
+
+    &__development-department-overview-div {
+      @include column-flex-direction();
+      @include full-width();
+      margin-top: 0.7rem;
+      row-gap: 1rem;
+    }
+    &__web-development-div,
+    &__app-development-div,
+    &__gaming-development-div {
+      border-width: 0.3rem;
+      width: 95%;
+      padding: 1.3rem 0;
+      row-gap: 1rem;
+    }
+
+    &__web-development-headline,
+    &__app-development-headline,
+    &__gaming-development-headline {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    &__web-development-img,
+    &__app-development-img,
+    &__gaming-development-img {
+      width: 100%;
+      height: auto;
+    }
+
+    &__app-development-text,
+    &__gaming-development-text {
+      font-size: 1.1rem;
+    }
+
+    &__web-development-button {
+      width: 13rem;
+      height: 2rem;
+      font-size: 0.9rem;
+    }
+
+    &__app-development-button {
+      width: 12.5rem;
+      height: 2rem;
+      font-size: 0.9rem;
+    }
+
+    &__gaming-development-button {
+      width: 14rem;
+      height: 2rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .development-department-section {
+    @include content-direction-column-center();
+    border-width: 0.3rem;
+    padding: 1rem 0 0 0;
+    row-gap: 1rem;
+    margin: 1rem 3%;
+
+    &__headline {
+      margin: 0.7rem 3% 0 3%;
+      font-size: 1.2rem;
+    }
+
+    &__development-department-overview-div {
+      @include column-flex-direction();
+      margin-top: 0.5rem;
+      row-gap: 0.5rem;
+    }
+
+    &__web-development-div,
+    &__app-development-div,
+    &__gaming-development-div {
+      border-width: 0.3rem;
+      width: 95%;
+    }
+
+    &__web-development-headline,
+    &__app-development-headline,
+    &__gaming-development-headline {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 0 3%;
+    }
+
+    &__web-development-img,
+    &__app-development-img,
+    &__gaming-development-img {
+      width: 100%;
+      height: auto;
+    }
+
+    &__app-development-text,
+    &__gaming-development-text {
+      font-size: 1rem;
+    }
+
+    &__web-development-button {
+      width: 10rem;
+      height: 3rem;
+      font-size: 0.9rem;
+    }
+
+    &__app-development-button {
+      width: 10rem;
+      height: 3rem;
+      font-size: 0.9rem;
+    }
+
+    &__gaming-development-button {
+      width: 10rem;
+      height: 3rem;
+      font-size: 0.9rem;
+    }
+  }
+}
