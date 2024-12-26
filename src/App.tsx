@@ -2,23 +2,25 @@ import Roots from "./roots";
 import "./App.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Technologies from "./component/technologies/technologies";
-/*,
-    {
-      basename: "/",
-    }
+/*
 
 */
 function App() {
-  const router = createBrowserRouter([
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <Roots />,
+      },
+      {
+        path: "technologies",
+        element: <Technologies />,
+      },
+    ],
     {
-      path: "/",
-      element: <Roots />,
-    },
-    {
-      path: "technologies",
-      element: <Technologies />,
-    },
-  ]);
+      basename: "/",
+    }
+  );
 
   return (
     <div id="oben" className="app-div">
