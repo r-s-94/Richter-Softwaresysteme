@@ -16,7 +16,7 @@ function App() {
       },
     ],
     {
-      basename: "//",
+      basename: "/Richter-Softwaresysteme/",
     }
   );
 
