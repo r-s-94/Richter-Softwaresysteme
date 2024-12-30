@@ -1,5 +1,6 @@
 import "./developmentDepartment.scss";
 import Richter_Websoftware from "./assets/Richter-Websoftware.png";
+import Richter_Gamingwebsite from "./assets/Richter-Gamingwebseite.png";
 //import Service from "./service";
 
 export default function DevelopementDepartment() {
@@ -24,6 +25,7 @@ export default function DevelopementDepartment() {
           <a
             href="https://www.richter-websoftware.de"
             className="development-department-section__web-development-link link"
+            target="_blank"
           >
             <button className="development-department-section__web-development-button button">
               zur Websoftware Webseite
@@ -49,14 +51,20 @@ export default function DevelopementDepartment() {
             <wbr />
             Gamingsoftware
           </p>
-          <p className="development-department-section__gaming-development-text">
-            Bereich folgt
-          </p>
           <img
-            src=""
+            src={Richter_Gamingwebsite}
             className="development-department-section__gaming-development-img"
             alt=""
           />
+          <a
+            href="https://r-s-94.github.io/Richter-Gamingwebsite/"
+            className="development-department-section__gaming-development-link link"
+            target="_blank"
+          >
+            <button className="development-department-section__gaming-development-button button">
+              zur Gamingsoftware Webseite
+            </button>
+          </a>
         </div>
       </div>
     </section>
