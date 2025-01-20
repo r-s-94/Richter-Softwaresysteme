@@ -2,12 +2,7 @@ import Roots from "./roots";
 import "./App.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Technologies from "./component/technologies/technologies";
-/*
-,
-    {
-      basename: "/",
-    }
-*/
+
 function App() {
   const router = createBrowserRouter([
     {
