@@ -38,12 +38,14 @@
 }
 
 .head-section {
-  @include gray-border-for-section();
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
   margin: 5rem 5rem 1rem 5rem;
   padding: 0 0 1rem 0;
+  border-radius: 0.2rem;
 
   &__welcome-div {
     background-image: url(./assets/cosmos-1853491_1280.jpg);
@@ -51,6 +53,8 @@
     @include content-direction-space-around();
     padding: 3rem 0;
     @include box-adjustment();
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
   }
 
   &__logo {
@@ -84,6 +88,7 @@
   }
 
   &__text {
+    border: 1px solid #bdbdbd;
     padding: 5rem 5rem 5rem 3rem;
     text-decoration: left;
     border-radius: 0.3rem;
@@ -138,9 +143,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    margin: 1rem 3%;
+    margin: 1rem 3% 5rem 3%;
     padding: 0 0 1rem 0;
-    border-width: 0.5rem;
 
     &__welcome-div {
       padding: 4.5rem 0;
@@ -215,9 +219,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    margin: 1rem 3%;
+    margin: 1rem 3% 4.5rem 3%;
     padding: 0 0 1rem 0;
-    border-width: 0.5rem;
 
     &__welcome-div {
       padding: 4rem 0;
@@ -292,9 +295,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    margin: 1rem 3%;
+    margin: 1rem 3% 4rem 3%;
     padding: 0 0 1rem 0;
-    border-width: 0.4rem;
 
     &__welcome-div {
       padding: 4rem 0;
@@ -369,9 +371,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    margin: 1rem 3%;
+    margin: 1rem 3% 3.5rem 3%;
     padding: 0 0 1rem 0;
-    border-width: 0.4rem;
 
     &__welcome-div {
       padding: 3rem 0;
@@ -446,9 +447,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    margin: 1rem 3%;
+    margin: 1rem 3% 2.5rem 3%;
     padding: 0 0 1rem 0;
-    border-width: 0.3rem;
 
     &__welcome-div {
       padding: 1.5rem 0;
@@ -522,9 +522,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    margin: 1rem 3%;
+    margin: 1rem 3% 1.5rem 3%;
     padding: 0 0 1rem 0;
-    border-width: 0.3rem;
 
     &__welcome-div {
       padding: 1rem 0;

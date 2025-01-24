@@ -47,10 +47,12 @@
 
 .development-department-section {
   @include content-direction-column-center();
-  @include gray-border-for-section();
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
   row-gap: 1rem;
   margin: 1rem 3rem;
+  border-radius: 0.2rem;
+  background-color: white;
 
   &__headline {
     margin-top: 1rem;
@@ -69,7 +71,8 @@
   &__web-development-div,
   &__app-development-div,
   &__gaming-development-div {
-    @include gray-border-for-section();
+    border: 1px solid #bdbdbd;
+    border-radius: 0.2rem;
     @include column-flex-direction();
     padding: 1rem 0;
     row-gap: 1rem;
@@ -130,10 +133,9 @@
 @media screen and (min-width: 1700px) {
   .development-department-section {
     @include content-direction-column-center();
-    border-width: 0.5rem;
     padding: 1rem 0 1.5rem 0;
     row-gap: 1rem;
-    margin: 1rem 3%;
+    margin: 5rem 3%;
 
     &__headline {
       margin-top: 2.5rem;
@@ -150,7 +152,6 @@
     &__web-development-div,
     &__app-development-div,
     &__gaming-development-div {
-      border-width: 0.5rem;
       width: 100%;
       padding: 2rem 0;
       row-gap: 2rem;
@@ -199,10 +200,9 @@
 @media screen and (max-width: 1700px) {
   .development-department-section {
     @include content-direction-column-center();
-    border-width: 0.5rem;
     padding: 1rem 0 1.5rem 0;
     row-gap: 1rem;
-    margin: 1rem 3%;
+    margin: 4.5rem 3%;
 
     &__headline {
       margin-top: 2.3rem;
@@ -219,7 +219,6 @@
     &__web-development-div,
     &__app-development-div,
     &__gaming-development-div {
-      border-width: 0.5rem;
       width: 100%;
       padding: 2rem 0;
       row-gap: 2rem;
@@ -268,10 +267,9 @@
 @media screen and (max-width: 1400px) {
   .development-department-section {
     @include content-direction-column-center();
-    border-width: 0.4rem;
     padding: 1rem 0;
     row-gap: 1rem;
-    margin: 1rem 3%;
+    margin: 4rem 3%;
 
     &__headline {
       margin-top: 2rem;
@@ -288,7 +286,6 @@
     &__web-development-div,
     &__app-development-div,
     &__gaming-development-div {
-      border-width: 0.4rem;
       width: 95%;
       padding: 2rem 0;
       row-gap: 2rem;
@@ -337,10 +334,9 @@
 @media screen and (max-width: 1000px) {
   .development-department-section {
     @include content-direction-column-center();
-    border-width: 0.4rem;
     padding: 1rem 0 0.5rem 0;
     row-gap: 1rem;
-    margin: 1rem 3%;
+    margin: 3.5rem 3%;
 
     &__headline {
       margin-top: 1.3rem;
@@ -357,7 +353,6 @@
     &__web-development-div,
     &__app-development-div,
     &__gaming-development-div {
-      border-width: 0.4rem;
       width: 95%;
       padding: 1.5rem 0;
       row-gap: 1.5rem;
@@ -405,10 +400,9 @@
 @media screen and (max-width: 600px) {
   .development-department-section {
     @include content-direction-column-center();
-    border-width: 0.3rem;
     padding: 1rem 0 0 0;
     row-gap: 1rem;
-    margin: 1rem 3%;
+    margin: 2.5rem 3%;
 
     &__headline {
       margin-top: 1rem;
@@ -424,7 +418,6 @@
     &__web-development-div,
     &__app-development-div,
     &__gaming-development-div {
-      border-width: 0.3rem;
       width: 95%;
       padding: 1.3rem 0;
       row-gap: 1rem;
@@ -472,10 +465,9 @@
 @media screen and (max-width: 300px) {
   .development-department-section {
     @include content-direction-column-center();
-    border-width: 0.3rem;
     padding: 1rem 0 0 0;
     row-gap: 1rem;
-    margin: 1rem 3%;
+    margin: 1.5rem 3%;
 
     &__headline {
       margin: 0.7rem 3% 0 3%;
@@ -491,7 +483,6 @@
     &__web-development-div,
     &__app-development-div,
     &__gaming-development-div {
-      border-width: 0.3rem;
       width: 95%;
     }
 
