@@ -3,6 +3,7 @@ import "./footer.scss";
 export default function Footer() {
   return (
     <section id="footer" className="footer-section">
+      <p className="footer-section__headline">Impressum</p>
       <div className="footer-section__impressum-div">
         <div className="footer-section__person-div">
           <p className="footer-section__person">Sven Richter</p>

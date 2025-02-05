@@ -1,5 +1,5 @@
 import "./Head.scss";
-import LogoIMG from "./assets/Logo.webp";
+import LogoIMG from "./assets/web3-7637962_640.jpg";
 import AnimationComponent from "./animation";
 import DeveloperIMG from "./assets/Developer-IMG.jpg";
 
@@ -10,13 +10,13 @@ export default function HeadComponent() {
         {" "}
         <img src={LogoIMG} alt="" className="head-section__logo" />
         <h1 className="head-section__headline">
-          Herzlich Willkommen <wbr />
+          Herzlich willkommen <wbr />
           auf dem <wbr />
           Software-Portal
           <br />
           von
           <br />
-          Richter-Softwaresysteme
+          Richter Softwaresysteme
         </h1>{" "}
         <AnimationComponent />
       </div>
@@ -30,9 +30,9 @@ export default function HeadComponent() {
             <br />
             <span className="head-section__titel">Frontend Webdeveloper</span>
           </p>
-          <a href="#projects" className="head-section__link link">
+          <a href="#developent-department" className="head-section__link link">
             <button className="head-section__button button">
-              zu den Projekten{" "}
+              zur Abteilungsübersicht{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

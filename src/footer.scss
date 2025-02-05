@@ -13,6 +13,10 @@
   margin: 0 3rem 3rem 3rem;
   border-radius: 0.2rem;
 
+  &__headline {
+    font-size: 1.7rem;
+  }
+
   &__impressum-div {
     border: 1px solid #dbdbdb;
     border-radius: 0.2rem;
@@ -41,8 +45,12 @@
 
 @media screen and (min-width: 1700px) {
   .footer-section {
-    padding: 5rem 3% 3.5rem 3%;
+    padding: 4.5rem 3% 3.5rem 3%;
     margin: 0 3.5% 4rem 3.5%;
+
+    &__headline {
+      margin-bottom: 3rem;
+    }
 
     &__impressum-div {
       width: 95%;
@@ -78,13 +86,17 @@
 
 @media screen and (max-width: 1700px) {
   .footer-section {
-    padding: 5rem 3% 3.5rem 3%;
+    padding: 4.5rem 3% 3.5rem 3%;
     margin: 0 3% 4rem 3%;
+
+    &__headline {
+      margin-bottom: 3rem;
+    }
 
     &__impressum-div {
       width: 95%;
       margin-bottom: 0.5rem;
-      padding: 5rem 5% 5rem 43%;
+      padding: 5rem 5% 5rem 41%;
     }
 
     &__person-div {
@@ -115,8 +127,12 @@
 
 @media screen and (max-width: 1400px) {
   .footer-section {
-    padding: 5rem 3% 3.5rem 3%;
+    padding: 3.5rem 3%;
     margin: 0 3% 4rem 3%;
+
+    &__headline {
+      margin-bottom: 2.5rem;
+    }
 
     &__impressum-div {
       width: 95%;
@@ -152,8 +168,13 @@
 
 @media screen and (max-width: 1000px) {
   .footer-section {
-    padding: 4rem 3% 3rem 3%;
+    padding: 3rem 3%;
     margin: 0 3% 4rem 3%;
+
+    &__headline {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
 
     &__impressum-div {
       width: 95%;
@@ -189,8 +210,13 @@
 
 @media screen and (max-width: 600px) {
   .footer-section {
-    padding: 3rem 3% 2.5rem 3%;
+    padding: 2.5rem 3%;
     margin: 0 3% 3rem 3%;
+
+    &__headline {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
 
     &__impressum-div {
       width: 95%;
@@ -228,6 +254,11 @@
   .footer-section {
     padding: 2rem 3%;
     margin: 0 3% 2rem 3%;
+
+    &__headline {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
 
     &__impressum-div {
       width: 95%;
