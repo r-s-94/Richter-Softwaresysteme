@@ -1,5 +1,5 @@
 import "./developmentDepartment.scss";
-import Richter_Websoftware from "./assets/Screenshot (12).png";
+import Richter_Websoftware from "./assets/Screenshot (15).png";
 import Richter_Gamingwebsite from "./assets/Screenshot (13).png";
 //import Service from "./service";
 
