@@ -10,7 +10,7 @@ export default function DevelopementDepartment() {
       className="development-department-section"
     >
       <h2 className="development-department-section__headline">
-        Software Abteilungen
+        Software-Abteilungen
       </h2>
       <div className="development-department-section__development-department-overview-div">
         <div className="development-department-section__web-development-div">
