@@ -15,7 +15,7 @@ export default function DevelopementDepartment() {
       <div className="development-department-section__development-department-overview-div">
         <div className="development-department-section__web-development-div">
           <p className="development-department-section__web-development-headline">
-            Richter Websoftware
+            Richter-Websoftware
           </p>
           <img
             src={Richter_Websoftware}
@@ -34,7 +34,7 @@ export default function DevelopementDepartment() {
         </div>
         <div className="development-department-section__app-development-div">
           <p className="development-department-section__app-development-headline">
-            Richter Appsoftware
+            Richter-Appsoftware
           </p>
           <p className="development-department-section__app-development-text">
             Bereich folgt
@@ -47,7 +47,8 @@ export default function DevelopementDepartment() {
         </div>
         <div className="development-department-section__gaming-development-div">
           <p className="development-department-section__gaming-development-headline">
-            Richter <wbr />
+            Richter-
+            <wbr />
             Gamingsoftware
           </p>
           <img
